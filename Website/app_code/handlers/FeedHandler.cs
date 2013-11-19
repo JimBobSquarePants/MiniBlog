@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.ServiceModel.Syndication;
 using System.Web;
 using System.Xml;
@@ -30,7 +29,7 @@ public class FeedHandler : IHttpHandler
 
     private IEnumerable<SyndicationItem> GetItems()
     {
-        foreach (Post p in Storage.GetAllPosts().Take(10))
+        foreach (Post p in Blog.GetPosts(10))
         {
             var item = new SyndicationItem(p.Title, p.Content, p.AbsoluteUrl, p.AbsoluteUrl.ToString(), p.LastModified);
             item.Authors.Add(new SyndicationPerson("", p.Author, ""));

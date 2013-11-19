@@ -41,8 +41,6 @@
             showCategoriesForDisplay();
 
             $("#tools").fadeOut();
-
-            $(".categoriesControl").fadeOut();
         }
     },
     toggleSourceView = function () {
@@ -135,7 +133,7 @@
                 $(item).remove();
             }
         });
-        $("ul.categories").append("<li><input id='txtCategories' /></li>");
+        $("ul.categories").append("<li><input id='txtCategories' class='form-control' /></li>");
         $("#txtCategories").val(categoriesString);
     },
     showCategoriesForDisplay = function () {
