@@ -35,7 +35,7 @@
     <main>
         @RenderBody()
         <div class="container row">
-            <div class="col-m-8 push-m-2">
+            <div class="col-m-8 offset-m-2">
                 <footer>
                     @if (Page.ShowPaging != null)
                     {
@@ -57,11 +57,43 @@
     </main>
 
     <footer class="text-center" role="contentinfo" itemscope itemtype="http://schema.org/Person" itemprop="author">
-        <div class="container">
+        <div class="projects">
+            <div class="container row">
+                <div class="col-m-4 offset-m-3">
+                    <h3>About Me</h3>
+                    <ul class="no-bullets">
+                        <li>
+                            <a href="https://twitter.com/James_M_South" rel="me">Follow me on Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/JimBobSquarePants/" rel="me">Fork me on Github</a>
+                        </li>
+                        <li>
+                            <a href="http://www.linkedin.com/profile/view?id=49975075" rel="me">Recruit me on LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-m-4">
+                    <h3>My Side Projects</h3>
+                    <ul class="no-bullets">
+                        <li>
+                            <a href="http://jimbobsquarepants.github.io/Responsive/" title="A super lightweight HTML, CSS, and JavaScript framework for building responsive websites">Responsive</a>
+                        </li>
+                        <li>
+                            <a href="http://jimbobsquarepants.github.io/ImageProcessor/" title="A lightweight library written in C# that allows you to manipulate images on-the-fly using ASP.NET 4.0.">ImageProcessor</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/JimBobSquarePants/Cruncher" title="A CSS, LESS, SASS, SCSS, JavaScript, and CoffeeScript Preprocessor for ASP.NET.">Cruncher</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>        
+<div class="container">
             @if (!User.Identity.IsAuthenticated)
             {
                 <span class="pull-right">
-                    <a href="@FormsAuthentication.LoginUrl?ReturnUrl=@Request.RawUrl">Sign in <i class="fa fa-lock"></i></a>
+                    <a href="@FormsAuthentication.LoginUrl?ReturnUrl=@Request.RawUrl"><i class="fa fa-lock"></i> Sign in</a>
                 </span>
             }
             <span>

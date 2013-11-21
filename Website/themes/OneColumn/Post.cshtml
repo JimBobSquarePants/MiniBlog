@@ -1,7 +1,7 @@
 ﻿<article class="post" data-id="@Model.ID" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
     <header>
         <div class="container row">
-            <div class="col-m-8 push-m-2">
+            <div class="col-m-8 offset-m-2">
                 <h1 itemprop="headline name">
                     <a href="@Model.Url" itemprop="url">@Model.Title</a>
                 </h1>
@@ -18,13 +18,13 @@
     </header>
     <div class="container">
         <div class="row">
-            <div class="col-m-8 push-m-2">
+            <div class="col-m-8 offset-m-2">
                 <div itemprop="articleBody">@Html.Raw(Model.Content)</div>
             </div>
         </div>
         <hr />
         <div class="row">
-            <div class="col-m-8 push-m-2">
+            <div class="col-m-8 offset-m-2">
                 @if (Blog.CurrentPost != null)
                 {
                     <section id="comments" aria-label="Comments">

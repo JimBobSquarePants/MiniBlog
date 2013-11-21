@@ -35,9 +35,21 @@ footer[role="contentinfo"] a {
 }
 
     header[role=banner] a:hover,
-    footer[role="contentinfo"] a {
+    footer[role="contentinfo"] a:hover {
         text-decoration: underline;
     }
+
+footer[role="contentinfo"] {
+    padding-top: 0;
+}
+
+.projects {
+    background-color: #e9e6e1;
+    color: #69767F;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
 /*==============================================================
  * Post
  *==============================================================*/
@@ -126,6 +138,16 @@ footer[role="contentinfo"] a {
     #comments article strong {
         display: block;
     }
+
+#commentform {
+    margin-top: 2em;
+}
+
+input:invalid,
+input:out-of-range {
+    box-shadow: none;
+    outline: 1px solid #DA4F49;
+}
 
 button {
     background-color: #323A45;
