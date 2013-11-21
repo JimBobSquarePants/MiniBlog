@@ -29,7 +29,7 @@ window.onload = function () {
         var ajaxRequest = AsynObject.getAjaxRequest(callback);
         ajaxRequest.open("POST", url, true);
         ajaxRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        ajaxRequest.setRequestHeader("Connection", "close");
+        //ajaxRequest.setRequestHeader("Connection", "close");
         ajaxRequest.send(objectToUrl(data));
     };
 
@@ -118,7 +118,7 @@ window.onload = function () {
             clone.style.visibility = 'hidden';
             clone.style.height = 'auto';
 
-            addClass(clone, 'slideClone col-md-6 col-md-offset-3');
+            addClass(clone, 'slideClone col-m-6 push-m-3');
 
             document.body.appendChild(clone);
 
@@ -172,7 +172,8 @@ window.onload = function () {
 
             var elemStatus = document.getElementById("status");
             if (state === 4 && status === 200) {
-                elemStatus.innerText = "Your comment has been added";
+                elemStatus.innerHTML = "<p>Your comment has been added</p>";
+                removeClass(elemStatus, "hidden");
                 removeClass(elemStatus, "alert-danger");
                 addClass(elemStatus, "alert-success");
 
@@ -193,8 +194,9 @@ window.onload = function () {
                 return;
             }
             else if (status !== 200) {
+                removeClass(elemStatus, "hidden");
                 addClass(elemStatus, "alert-danger");
-                elemStatus.innerText = data.statusText;
+                elemStatus.innerHTML = "<p>" + data.statusText + "</p>";
                 callback(false);
             }
         }, {

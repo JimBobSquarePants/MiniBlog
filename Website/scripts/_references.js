@@ -3,3 +3,14 @@
 /// <reference path="bootstrap-wysiwyg.js" />
 /// <reference path="comments.js" />
 /// <reference path="jquery-2.0.2.js" />
+/// <reference path="comments - Copy.js" />
+/// <reference path="../css/libs/fonts/open-sans/opensans_bold_macroman/specimen_files/easytabs.js" />
+/// <reference path="../css/libs/fonts/open-sans/opensans_bolditalic_macroman/specimen_files/easytabs.js" />
+/// <reference path="../css/libs/fonts/open-sans/opensans_extrabold_macroman/specimen_files/easytabs.js" />
+/// <reference path="../css/libs/fonts/open-sans/opensans_extrabolditalic_macroman/specimen_files/easytabs.js" />
+/// <reference path="../css/libs/fonts/open-sans/opensans_italic_macroman/specimen_files/easytabs.js" />
+/// <reference path="../css/libs/fonts/open-sans/opensans_light_macroman/specimen_files/easytabs.js" />
+/// <reference path="../css/libs/fonts/open-sans/opensans_lightitalic_macroman/specimen_files/easytabs.js" />
+/// <reference path="../css/libs/fonts/open-sans/opensans_regular_macroman/specimen_files/easytabs.js" />
+/// <reference path="../css/libs/fonts/open-sans/opensans_semibold_macroman/specimen_files/easytabs.js" />
+/// <reference path="../css/libs/fonts/open-sans/opensans_semibolditalic_macroman/specimen_files/easytabs.js" />
